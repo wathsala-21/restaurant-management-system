@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zentro Fab | Premium Fine Dining & Sri Lankan Gastronomy</title>
+    <meta name="description" content="Zentro Fab offers an unforgettable culinary experience blending global fine dining and authentic Sri Lankan gastronomy. Book a table or order online.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="42" stroke="url(#goldGradientNav)" stroke-width="2" stroke-dasharray="3 3"/>
+                    <path d="M50 15 L85 50 L50 85 L15 50 Z" stroke="url(#goldGradientNav)" stroke-width="1.5" />
+                    <path d="M50 28 L53 38 L63 38 L55 44 L58 54 L50 48 L42 54 L45 44 L37 38 L47 38 Z" fill="url(#goldGradientNav)" />
+                    <path d="M40 58 H60 L40 78 H60" stroke="url(#goldGradientNav)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="goldGradientNav" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#d4af37" />
+                            <stop offset="100%" stop-color="#f0c950" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">Zentro <span>Fab</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="openSearchBtn" aria-label="Open Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="cart-btn" id="openAuthBtn" aria-label="User Account">
+                    <i class="fas fa-user"></i>
+                </button>
+                <button class="cart-btn" id="openCartBtn" aria-label="Open Order Cart">
+                    <i class="fas fa-concierge-bell"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Panel (Slide Down) -->
+    <div class="search-panel" id="searchPanel">
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search for Chicken Lamprais, Chocolate Fudge Cake, etc...">
+            <button class="search-close-btn" id="closeSearchBtn"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="close-menu"><i class="fas fa-times"></i></div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-up">Zentro Fab & Sri Lankan Gastronomy</h1>
+            <p class="fade-up delay-1">Exquisite heritage culinary creations & contemporary fine arts</p>
+            <div class="hero-btns fade-up delay-2">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#contact" class="btn btn-secondary">Reserve a Table</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container about-container">
+            <div class="about-img-group fade-up">
+                <div class="img-wrapper main-img">
+                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&q=80" alt="Chef crafting dish">
+                </div>
+                <div class="img-wrapper sub-img">
+                    <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&q=80" alt="Sri Lankan spices">
+                </div>
+            </div>
+            <div class="about-content fade-up delay-1">
+                <span class="subtitle">Our Heritage</span>
+                <h2>A Fusion of Sri Lankan Legacy & Contemporary Gastronomy</h2>
+                <div class="separator-left"></div>
+                <p class="about-text-highlight">Zentro Fab celebrates the rich tapestry of Sri Lankan culinary heritage, elegantly reimagined through modern gastronomic art.</p>
+                <p>Our journey began with a simple passion: to elevate authentic island spices—from pure Ceylon cinnamon to hand-ground roasted curries—into high-end global dining masterpieces. Under the guidance of our culinary visionaries, we seamlessly fuse local soul with premium ingredients, creating an unparalleled gastronomic journey.</p>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Michelin Stars Inspiration</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Locally Sourced Spices</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section id="menu" class="collections section-padding">
+        <div class="section-header fade-up">
+            <h2>Signature Menu</h2>
+            <div class="separator"></div>
+            <p>Discover our culinary masterpieces, crafted with passion, fine gourmet arts, and traditional Sri Lankan inspiration.</p>
+        </div>
+
+        <!-- Menu Filters -->
+        <div class="menu-filters fade-up">
+            <button class="filter-btn active" data-filter="all">All Items</button>
+            <button class="filter-btn" data-filter="popular">Popular Items</button>
+            <button class="filter-btn" data-filter="srilankan">Sri Lankan Specialties</button>
+            <button class="filter-btn" data-filter="savouries">Savouries</button>
+            <button class="filter-btn" data-filter="cakes">Cakes</button>
+            <button class="filter-btn" data-filter="dessert">Sweet Desserts</button>
+        </div>
+
+        <div class="product-grid container" id="productGridContainer">
+            <!-- Dynamic products will be injected by script.js -->
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section id="experience" class="featured section-padding">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>The Zentro Experience</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-box fade-up">
+                    <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Premium Ingredients</h3>
+                    <p>We source only the finest organic produce, premium cuts, and fresh seafood daily.</p>
+                </div>
+                <div class="feature-box fade-up delay-1">
+                    <div class="feature-icon"><i class="fas fa-fire-burner"></i></div>
+                    <h3>Expert Chefs</h3>
+                    <p>Our Michelin-starred culinary team crafts every dish with precision and artistry.</p>
+                </div>
+                <div class="feature-box fade-up delay-2">
+                    <div class="feature-icon"><i class="fas fa-concierge-bell"></i></div>
+                    <h3>Impeccable Service</h3>
+                    <p>Experience attentive, personalized service that anticipates your every need.</p>
+                </div>
+                <div class="feature-box fade-up delay-3">
+                    <div class="feature-icon"><i class="fas fa-wine-glass"></i></div>
+                    <h3>Elegant Ambiance</h3>
+                    <p>Dine in a sophisticated atmosphere with curated music and soft, ambient lighting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Slider -->
+    <section id="testimonials" class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Guest Experiences</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="testimonial-slider fade-up">
+                <div class="slider-container" id="sliderContainer">
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80" alt="Sarah J." class="client-img">
+                        <p class="quote">"The Ceylon Mud Crab Curry was absolutely unbelievable. Authentic island flavors combined with elegant execution. An unforgettable dining experience!"</p>
+                        <h4 class="client-name">Sarah Jenkins</h4>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80" alt="Michael R." class="client-img">
+                        <p class="quote">"We celebrated our anniversary here. The ambiance is stunning and the Royal Ceylon Lamprais was incredible. Best fine dining in the city."</p>
+                        <h4 class="client-name">Michael Roberts</h4>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&q=80" alt="Emily C." class="client-img">
+                        <p class="quote">"Their attention to detail is unmatched. The wine pairings suggested by the sommelier perfectly complemented our Truffle Risotto."</p>
+                        <h4 class="client-name">Emily Chen</h4>
+                    </div>
+                </div>
+                <div class="slider-dots" id="sliderDots">
+                    <!-- Dots generated by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-content">
+            <div class="footer-col brand-col fade-up">
+                <a href="#" class="logo">
+                    <svg class="logo-icon" width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="42" stroke="url(#goldGradientFooter)" stroke-width="2" stroke-dasharray="3 3"/>
+                        <path d="M50 15 L85 50 L50 85 L15 50 Z" stroke="url(#goldGradientFooter)" stroke-width="1.5" />
+                        <path d="M50 28 L53 38 L63 38 L55 44 L58 54 L50 48 L42 54 L45 44 L37 38 L47 38 Z" fill="url(#goldGradientFooter)" />
+                        <path d="M40 58 H60 L40 78 H60" stroke="url(#goldGradientFooter)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="goldGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#d4af37" />
+                                <stop offset="100%" stop-color="#f0c950" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="logo-text">Zentro <span>Fab</span></span>
+                </a>
+                <p>Elevating the art of fine dining. Join us for a culinary journey of international elegance and Sri Lankan heritage.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-utensils"></i></a>
+                </div>
+            </div>
+            <div class="footer-col fade-up delay-1">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#">Reservations</a></li>
+                </ul>
+            </div>
+            <div class="footer-col fade-up delay-2">
+                <h3>Contact</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Ave, NY 10001</li>
+                    <li><i class="fas fa-phone"></i> +1 (212) 555-0199</li>
+                    <li><i class="fas fa-envelope"></i> reservations@zentrofab.com</li>
+                </ul>
+            </div>
+            <div class="footer-col newsletter-col fade-up delay-3">
+                <h3>Newsletter</h3>
+                <p>Subscribe for exclusive event invitations and seasonal menu reveals.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Zentro Fab. All Rights Reserved. <span class="creator-tag">| Created by <span class="creator-link">wathzz</span></span></p>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal"><i class="fas fa-times"></i></button>
+            <div class="modal-body" style="display: flex; flex-direction: row; height: 100%;">
+                <div class="modal-img">
+                    <img src="" alt="Dish Image" id="modalImg">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle">Dish Title</h2>
+                    <p class="modal-price" id="modalPrice">$0.00</p>
+                    <div class="rating modal-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="modal-desc" id="modalDesc">Detailed description here.</p>
+                    
+                    <div class="modal-options">
+                        <div class="option-group" id="modalSizeGroup" style="display: none;">
+                            <label>Select Size</label>
+                            <div class="size-selector-group" id="sizeSelectorGroup">
+                                <!-- Dynamically populated sizes will go here -->
+                            </div>
+                        </div>
+                        <div class="option-group">
+                            <label for="addonSelect">Enhancements</label>
+                            <select id="addonSelect" class="custom-select">
+                                <option value="0">Standard Preparation</option>
+                                <option value="2500">Add Shaved Black Truffle (+Rs. 2,500.00)</option>
+                                <option value="1500">Add 24k Gold Leaf (+Rs. 1,500.00)</option>
+                                <option value="150">Add Sri Lankan Pol Sambol Relish (+Rs. 150.00)</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Dish Highlights</label>
+                            <ul class="ingredients-list">
+                                <li><i class="fas fa-check-circle"></i> Organic Ingredients</li>
+                                <li><i class="fas fa-check-circle"></i> Locally Sourced</li>
+                                <li><i class="fas fa-check-circle"></i> Chef's Signature</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="modal-actions">
+                        <div class="qty-selector">
+                            <button class="qty-btn minus">-</button>
+                            <input type="number" value="1" min="1" id="qtyInput" readonly>
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        <button class="btn btn-primary btn-block add-to-cart-modal">
+                            Order Dish - <span id="modalTotal">$0.00</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- User Authentication Modal (Register / Login) -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal-content" style="max-width: 450px; display: block; padding: 40px;">
+            <button class="close-modal" id="closeAuthModal"><i class="fas fa-times"></i></button>
+            <div class="auth-tabs">
+                <div class="auth-tab active" id="tabLogin">Log In</div>
+                <div class="auth-tab" id="tabRegister">Register</div>
+            </div>
+            
+            <!-- Login Form -->
+            <form class="auth-form active" id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter password" required>
+                </div>
+                <button type="submit" class="btn btn-primary auth-submit-btn">Log In</button>
+                <div class="auth-switch">Don't have an account? <span id="switchToRegister">Register here</span></div>
+            </form>
+            
+            <!-- Register Form -->
+            <form class="auth-form" id="registerForm">
+                <div class="form-group">
+                    <label for="regName">Full Name</label>
+                    <input type="text" id="regName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Email Address</label>
+                    <input type="email" id="regEmail" placeholder="Enter email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPhone">Phone Number</label>
+                    <input type="tel" id="regPhone" placeholder="Enter phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="regAddress">Delivery Address</label>
+                    <input type="text" id="regAddress" placeholder="Enter delivery address" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Password</label>
+                    <input type="password" id="regPassword" placeholder="Create a password" required>
+                </div>
+                <button type="submit" class="btn btn-primary auth-submit-btn">Create Account</button>
+                <div class="auth-switch">Already have an account? <span id="switchToLogin">Log in here</span></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dynamic Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Your Order</h2>
+            <button class="close-cart" id="closeCartBtn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItemsContainer">
+            <!-- Dynamic cart items injected here by JS -->
+        </div>
+        <div class="cart-footer-details">
+            <!-- Order Type Dine-in or Takeaway -->
+            <div class="order-type-selector">
+                <span class="selector-label">Dining Preference</span>
+                <div class="type-options">
+                    <button class="type-option active" id="dineinBtn" type="button">
+                        <i class="fas fa-utensils"></i> Dine-In
+                    </button>
+                    <button class="type-option" id="takeawayBtn" type="button">
+                        <i class="fas fa-bag-shopping"></i> Takeaway
+                    </button>
+                </div>
+            </div>
+            <div class="cart-total-row">
+                <span>Subtotal:</span>
+                <span id="cartSubtotal">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-block checkout-btn" id="checkoutBtn">Place Order</button>
+        </div>
+    </div>
+    <div class="cart-sidebar-overlay" id="cartOverlay"></div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMsg">Dish added to order</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
